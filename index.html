@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 100s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: rgb(153, 0, 255);}
+}
+</style>
+<style>
+#Rotatediv {
+  transform: rotateY(150deg);
+    animation-name: Rotate;
+    animation-duration: 100s;
+}
+@keyframes Rotate {
+ from {transform: rotateY(150deg);}
+ to {transform: rotateZ(150deg);}
+}
+</style>
+<style>   
+    #Transtitiondiv:hover {
+      height: 300px; width: 300px;
+      animation-name: Transition;
+    }
+    @keyframes Transition {
+      from {background-color: aqua;}
+    }
+  
+    </style>
+<style>
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  </style>
+  <title>CSS Test</title> <link rel="stylesheet" href="csstest.css">
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<h1>Rotate</h1>
+<hr>
+<div id="Rotatediv">
+</div>
+<h1>Transition</h1>
+<hr>
+<div id="Transtitiondiv">
+</div>
+<h1>Tooltip</h1>
+<hr>
+<div class="tooltip">
+Hello
+<span class="tooltiptext">Hello</span>
+</div>
+<h1>
+Circle Image
+</h1>
+<table>
+<tr>
+<td>
+<h1>Difference</h1>
+</td>
+</tr>
+<tr>
+<img src="SFS_1377.JPG" alt="Krish" id="Circle" width="250px">
+</tr>
+<tr>
+<td>
+<h1>Normal Image</h1>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SFS_1377.JPG" alt="Krish" width="250px">
+</td>
+</tr>
+</table>
+</body>
+</html>
